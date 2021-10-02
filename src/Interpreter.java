@@ -3,7 +3,7 @@
 // which is scanned, parsed, and evaluated.
 // All evaluations share the same environment,
 // so they can share variables.
-
+//test test 12 3
 public class Interpreter {
 
     public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class Interpreter {
 	Environment env=new Environment();
 	for (String stmt: args)
 	    try {
+	    	
 	    	//stmt needs to be combined so that all args are evaluated together
 		System.out.println(parser.parse(stmt).eval(env));
 	    } catch (SyntaxException e) {
